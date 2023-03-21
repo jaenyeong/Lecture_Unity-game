@@ -6,31 +6,7 @@ https://spartacodingclub.kr/online/game
 ---
 
 ## [Settings]
-#### Github
-* 파일이 50MB가 넘어 lfs 설정
-  ```console
-  # 설치
-  brew install git-lfs
 
-  # 설치 확인
-  git lfs install
-  
-  # psd 파일 트래킹 설정
-  git lfs track "*.psd"
-
-  # 모든 히스토리를 lfs에 마이그레이션
-  git lfs migrate import --everything
-
-  # 오래된(닿지 못하는) reflog 파일 삭제
-  ## 추가적으로 파일을 삭제를 통한 용량 확보 효과가 있음
-  git reflog expire --expire=now --all
-
-  # 안전하게 깃 GC 작업 수행
-  git gc --prune=now --aggressive
-
-  # 
-  git push --mirror --force
-  ```
 #### Unity Hub
 * 3.4.1 버전 (2023.01.24 기준)
   * https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg
@@ -63,4 +39,3 @@ https://spartacodingclub.kr/online/game
   * Assets, Packages 디렉터리 존재
 * Inspector
   * 게임 요소(버튼, 캐릭터 등)에 대한 내부 확인(값, 함수, 상태 등)
-
